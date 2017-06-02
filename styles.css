@@ -1,0 +1,21 @@
+/* CSS Document */
+
+body{
+	background-image:linear-gradient(rgba(100,100,100,0.9),rgba(150,150,150,0.9)),
+		url("City-Skyline-stock3923.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:50%;
+}
+.formHolder{
+	margin-top:30%;
+	text-align:center;
+	color:white;
+}
+
+form{
+	text-align:center;
+}
+form input{
+	display:inline-block;
+}
