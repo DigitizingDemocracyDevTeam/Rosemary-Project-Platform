@@ -1,13 +1,27 @@
 var infoSelector = document.querySelector("#selectHolder select");
-var infoPanels = document.querySelectorAll(".infoDisplay");
+var moreInfoButton = document.querySelector("#selectHolder button");
+//var infoPanels = document.querySelectorAll(".infoDisplay");
 
-/*function hidePanels(documents){
+function hidePanels(documents){
 	for(var i = 0; i<documents.length; i++){
-		documents[i].visibility = "hidden";
+		documents[i].style.visibility = "hidden";
 	}
-}*/
+}
+
+function showPanels(documents){
+	for(var i=0; i<documents.length; i++){
+		documents[i].style.visibility = "visible";
+	}
+}
+
+function makeInfoOneVis(){
+	document.getElementById("panel1").style.visibility = "visible";
+}
 
 function updateInfo(selectorElement){
+	var infoPanels = document.querySelectorAll(".infoDisplay");
+	hidePanels(infoPanels);
+	
 	if(selectorElement.value === "infoOne"){
 		
 		console.log("info one has been selected");
@@ -29,8 +43,13 @@ function updateInfo(selectorElement){
 	}
 }
 
-//hidePanels(infoPanels);
+makeInfoOneVis();
 infoSelector.addEventListener("change", function() {updateInfo(this);})
+moreInfoButton.addEventListener("click", function(){
+		var infoPanels = document.querySelectorAll(".infoDisplay");
+		showPanels(infoPanels);
+	});
+
 
 
 // JavaScript Document
