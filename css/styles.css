@@ -44,3 +44,10 @@ form{
 form input{
 	display:inline-block;
 }
+
+.formHolder input{
+	width: 35%;
+	height: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
