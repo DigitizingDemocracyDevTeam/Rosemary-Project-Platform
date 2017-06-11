@@ -6,6 +6,31 @@ body{
 	background-size:cover;
 	padding-bottom:50%;
 }
+
+h1{
+	text-align: center;
+	color: white;
+}
+
+#selectHolder{
+	text-align: center;
+}
+
+.infoHolder{
+	text-align: center;
+}
+
+.infoDisplay{
+	text-align: center;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	display: inline-block;
+	background-color: rgba(153,153,153,0.73);
+	border-radius: 10%;
+}
+
 .formHolder{
 	margin-top:30%;
 	text-align:center;
