@@ -1,7 +1,7 @@
 /* CSS Document */
 body{
 	background-image:linear-gradient(rgba(100,100,100,0.9),rgba(150,150,150,0.9)),
-		url("gazebo-on-the-campus-of-unc-chapel-hill-north-carolina.jpg");
+		url("../Images/gazebo-on-the-campus-of-unc-chapel-hill-north-carolina.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	padding-bottom:50%;
@@ -21,4 +21,9 @@ form input{
 .button{
     text-align: center;
     margin-top: 1%; 
+}
+.logo{
+    max-height: 200px;
+    max-width: 200px;
+    text-align: center;
 }
