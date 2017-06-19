@@ -33,7 +33,7 @@ h1{
 }
 
 .formHolder{
-	margin-top:30%;
+	margin-top:20%;
 	text-align:center;
 	color:white;
 }
@@ -42,14 +42,20 @@ form{
 	text-align:center;
 }
 form input{
-	display:inline-block;
+	display:block;
+	margin: auto;
 }
 
 .formHolder input{
 	width: 35%;
-	height: 5%;
 	margin-top: 1%;
 	margin-bottom: 1%;
+}
+
+#aboutUsInfo{
+	width:70%;
+	text-align:center;
+	margin: auto;
 }
 
 .button{

@@ -9,12 +9,17 @@
 <body>
 	<div class="formHolder">
 		<h1>Welcome to The Rosemary Street Project</h1>
-		<p>Powered by digitizing democracy</p>
+		<div><img src="../static/images/logo.png" height="100px" width="100px "></div>
+        <p>Powered by digitizing democracy</p>
+        <div id="aboutUsInfo">
+			<p>Digitizing Democracy is a social venture aimed at increasing participation in local governments by improving information accessibility and transparency through a digital platform medium. We want to make democracy accessible to everyone.</p>
+			<p>We are asking for your demographic information in order to give you the most relevant and personalized information possible.</p>
+        </div>
 		<form method="POST">
-			<input type="text" placeholder="Name">
-			<input type="number" placeholder="Age">
-			<input type="number" placeholder="Family Size">
-			<input type="text" placeholder="Occupation">
+			<input type="text" placeholder="Name"><br>
+			<input type="number" placeholder="Age"><br>
+			<input type="number" placeholder="Family Size"><br>
+			<input type="text" placeholder="Occupation"><br>
 			<select>
 				<option>Race</option>
 				<option value="white">Caucasian</option>
@@ -29,6 +34,7 @@
 				<option value="northside"> Northside Neighborhood</option>
 				<option value="other">Other</option>
 			</select>
+			<br><br>
 			<input type="button" name="submit" value="Submit" id="indexSubmitButton">
 		</form>
 	</div>
