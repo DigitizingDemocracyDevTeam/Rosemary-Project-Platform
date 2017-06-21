@@ -2,9 +2,9 @@ var infoSelector = document.querySelector("#selectHolder select");
 var moreInfoButton = document.querySelector("#selectHolder button");
 var submitButton = document.getElementById("buttonOnSecondPage"); //Need to add listener
 
-submitButton.addEventListener("click", function(){
-	window.location.href="thirdPage.html";
-});
+//submitButton.addEventListener("click", function(){
+//	window.location.href="thirdPage.html";
+//});
 //var infoPanels = document.querySelectorAll(".infoDisplay");
 
 function hidePanels(documents){

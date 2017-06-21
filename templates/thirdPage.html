@@ -11,10 +11,10 @@
 	<div class="formHolder">
 		<h1>Community Feedback</h1>
 		<p>Powered by Digitizing Democracy</p>
-		<form method="POST">
-			<input type="feedback" placeholder="What are your thoughts?"><br>
-			<input type="materials" placeholder="Would you like to submit any additional materials?"><br>
-			<input type="button" name="submit" value="submit" id="submitButton"><br>
+		<form action="{{ url_for('submitFeedback') }}" method="POST">
+			<input type="text" name="feedback" placeholder="What are your thoughts?"><br>
+			<input type="text" name="additionalMaterials" placeholder="Would you like to submit any additional materials?"><br>
+			<input type="submit" name="submit" value="submit" id="submitButton"><br>
 		</form>
 	</div>
 </body>

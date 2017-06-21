@@ -15,12 +15,12 @@
 			<p>Digitizing Democracy is a social venture aimed at increasing participation in local governments by improving information accessibility and transparency through a digital platform medium. We want to make democracy accessible to everyone.</p>
 			<p>We are asking for your demographic information in order to give you the most relevant and personalized information possible.</p>
         </div>
-		<form method="POST">
-			<input type="text" placeholder="Name"><br>
-			<input type="number" placeholder="Age"><br>
-			<input type="number" placeholder="Family Size"><br>
-			<input type="text" placeholder="Occupation"><br>
-			<select>
+		<form action="{{ url_for('submitFirstPage') }}" method="POST">
+			<input type="text" name='name' placeholder="Name"><br>
+			<input type="number" name='age' placeholder="Age"><br>
+			<input type="number" name='familySize' placeholder="Family Size"><br>
+			<input type="text" name='occupation' placeholder="Occupation"><br>
+			<select name="race">
 				<option>Race</option>
 				<option value="white">Caucasian</option>
 				<option value="black">Black</option>
@@ -28,17 +28,17 @@
 				<option value="native american">Native American</option>
 				<option value="asian">Asian/Pacific Islander</option>
 			</select>
-			<select>
+			<select name="location">
 				<option>Where do you live?</option>
 				<option value="rosemary Street">Rosemary Street</option>
 				<option value="northside"> Northside Neighborhood</option>
 				<option value="other">Other</option>
 			</select>
 			<br><br>
-			<input type="button" name="submit" value="Submit" id="indexSubmitButton">
+			<input type="submit" name="submit" value="Submit" id="indexSubmitButton">
 		</form>
 	</div>
 </body>
-<script type="text/javascript" src="../static/jscript/indexScript.js"></script>
+<!--<script type="text/javascript" src="../static/jscript/indexScript.js"></script>-->
 
 </html>
